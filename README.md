@@ -1,5 +1,7 @@
 ### This repository contains the code for a React frontend that interacts with the backend API to provide translation functionality using the Microsoft Translator service.
 
+Version : 1.0.0
+
 Prerequisites :
 
 Node.js and npm installed on your machine.
@@ -23,6 +25,43 @@ The Backend api repo is https://github.com/Naveenreddy-bot/Translator-Azure-Back
 ### Start the development server:
 
 npm start
+
+### Features
+Translation: The frontend sends a POST request to the backend API with the text to be translated. The API communicates with the Microsoft Translator service and returns the translated text.
+
+### API Endpoint.  POST /translate
+
+Description: Translates the input text to the target language using the Microsoft Translator service.
+Request:
+
+Method: POST
+
+Endpoint: /translate
+
+Request Body:
+
+{
+  "text": "Enter the text to be translated"
+}
+
+Headers:
+Content-Type: application/json
+
+Response:
+
+Status Code: 200 (OK)
+
+Data Encoding: JSON
+
+Response Body:
+
+{
+  "translation": "Translated text"
+}
+
+### Error Handling:
+
+If there is an error during translation or communication with the Microsoft Translator service, the API will respond with an appropriate error status code and an error message.
 
 ### Usage
 
