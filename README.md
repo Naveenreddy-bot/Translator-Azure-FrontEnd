@@ -59,6 +59,9 @@ Response Body:
   "translation": "Translated text"
 }
 
+<img width="1552" alt="image" src="https://github.com/Naveenreddy-bot/Translator-Azure-FrontEnd/assets/123338659/5307e175-e046-47e9-a04f-91b5ee13fc7a">
+
+
 ### Error Handling:
 
 If there is an error during translation or communication with the Microsoft Translator service, the API will respond with an appropriate error status code and an error message.
